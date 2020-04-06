@@ -1,0 +1,2084 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;curl&quot;,&quot;java&quot;,&quot;nodejs&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="curl">curl</a>
+              <a href="#" data-language-name="java">java</a>
+              <a href="#" data-language-name="nodejs">nodejs</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#getting-started" class="toc-h1 toc-link" data-title="Getting Started">Getting Started</a>
+          </li>
+          <li>
+            <a href="#environments" class="toc-h1 toc-link" data-title="Environments">Environments</a>
+          </li>
+          <li>
+            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#description" class="toc-h2 toc-link" data-title="Description">Description</a>
+                  </li>
+                  <li>
+                    <a href="#access-keys" class="toc-h2 toc-link" data-title="Access Keys">Access Keys</a>
+                  </li>
+                  <li>
+                    <a href="#token-lifetime" class="toc-h2 toc-link" data-title="Token lifetime">Token lifetime</a>
+                  </li>
+                  <li>
+                    <a href="#create-access-token" class="toc-h2 toc-link" data-title="Create Access Token">Create Access Token</a>
+                  </li>
+                  <li>
+                    <a href="#using-the-access-token" class="toc-h2 toc-link" data-title="Using the Access Token">Using the Access Token</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#customers" class="toc-h1 toc-link" data-title="Customers">Customers</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#create-a-customer" class="toc-h2 toc-link" data-title="Create a customer">Create a customer</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-customer" class="toc-h2 toc-link" data-title="Get a customer">Get a customer</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-customer" class="toc-h2 toc-link" data-title="Update a customer">Update a customer</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-customer" class="toc-h2 toc-link" data-title="Delete a customer">Delete a customer</a>
+                  </li>
+                  <li>
+                    <a href="#list-and-search-customers" class="toc-h2 toc-link" data-title="List and search customers">List and search customers</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#customer-contacts" class="toc-h1 toc-link" data-title="Customer Contacts">Customer Contacts</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#create-a-contact-entry" class="toc-h2 toc-link" data-title="Create a contact entry">Create a contact entry</a>
+                  </li>
+                  <li>
+                    <a href="#update-a-contact-entry" class="toc-h2 toc-link" data-title="Update a contact entry">Update a contact entry</a>
+                  </li>
+                  <li>
+                    <a href="#delete-a-contact-entry" class="toc-h2 toc-link" data-title="Delete a contact entry">Delete a contact entry</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#customer-preferences" class="toc-h1 toc-link" data-title="Customer Preferences">Customer Preferences</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#create-or-update-customer-preferences" class="toc-h2 toc-link" data-title="Create or update customer preferences">Create or update customer preferences</a>
+                  </li>
+                  <li>
+                    <a href="#retrieve-customer-preferences" class="toc-h2 toc-link" data-title="Retrieve customer preferences">Retrieve customer preferences</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#messages" class="toc-h1 toc-link" data-title="Messages">Messages</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#send-a-message" class="toc-h2 toc-link" data-title="Send a message">Send a message</a>
+                  </li>
+                  <li>
+                    <a href="#retrieve-a-message" class="toc-h2 toc-link" data-title="Retrieve a message">Retrieve a message</a>
+                  </li>
+                  <li>
+                    <a href="#list-or-search-messages" class="toc-h2 toc-link" data-title="List or search messages">List or search messages</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='#'>Sign Up</a></li>
+            <li><a href='https://notihub.io'>2020 © Notihub</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='introduction'>Introduction</h1>
+<p>Notihub allows you to sends custom templates easily updated by our Web UI, through thousand of different customers in Web or Mobile devices!</p>
+
+<p>We allow you to configure a different set of providers like Twilio, Sendgrid, AWS, Mailgun, and much more to send different email, sms or even push notifications.</p>
+<h1 id='getting-started'>Getting Started</h1>
+<ul>
+<li>Create an account to obtain your environment and api keys </li>
+<li>Download any of our API SDK to fast access
+
+<ul>
+<li><a href="https://github.com/gvillo/notihub-java-sdk" target="_blank">Java SDK</a></li>
+<li><a href="https://github.com/gvillo/notihub-nodejs-sdk" target="_blank">Node.js SDK</a></li>
+</ul></li>
+<li>Use those keys to start sending messages! </li>
+</ul>
+<h1 id='environments'>Environments</h1>
+<p>Notihub supports the creation up-to 20 environments per account. When you register your account, we will create for you the <code>development</code> and <code>production</code> environments. You can also create new ones like <code>staging</code>, <code>testing</code>, <code>dev-green</code>, <code>dev-red</code> or whatever other you need to adapt to your development flow. </p>
+
+<p>Keep in mind, that each customer you create, or message you sent will only be part of one environment. But all your environments will run through your quota usages. </p>
+
+<p>Each environment will have a pair of <code>clientId</code> and <code>clientSecret</code> keys, that you can use with your <code>publicKey</code> from you account, to obtain an access token.</p>
+<h1 id='authentication'>Authentication</h1><h2 id='description'>Description</h2>
+<p>Before you can get started with sending messages, you need to obtain an access token, that will give access to one of your environments. 
+The Notihub API uses API keys to authenticate requests. You can view and manage your API keys in the Notihub Dashboard.</p>
+
+<p>Your API keys carry many privileges, so be sure to keep them secure! Do not share your secret API keys in publicly accessible areas such as GitHub, client-side code, and so forth. </p>
+
+<p>All API requests must be made over <strong>HTTPS</strong>. Calls made over plain HTTP will fail. API requests without authentication will also fail.</p>
+<h2 id='access-keys'>Access Keys</h2>
+<p>To access the Notihub API you will need to have your user account credentials <code>publicKey</code> and <code>secretKey</code> and also your specific environment credentials <code>clientId</code> and <code>clientSecret</code>.
+With those keys you have to generate a Base64 encoded string <code>Base64(publicKey:secretKey:clientId:clientSecret)</code> that is exchangeble for an access token</p>
+<h2 id='token-lifetime'>Token lifetime</h2>
+<p>Access tokens are short lived: 6 hours. To refresh authorization on an application access token, your application will simply exchange its client credentials for a new app access token. Any access tokens that have been previously initialized will not be invalidated with the creation of a new one; they will simply expire within an hour of the time of their creation.</p>
+<h2 id='create-access-token'>Create Access Token</h2>
+<p>Your application need to send a POST request with the <code>Authorization</code> header with the word <code>Basic</code> followed by a space and a base-64 encoded string 
+<code>publicKey:secretKey:clientId:clientSecret</code></p>
+
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/token/"
+  -X POST
+  -H "Authorization: Basic Base64(publicKey:secretKey:clientId:clientSecret)" 
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">defaultNotihubClient</span> <span class="o">=</span> <span class="n">NotihubClient</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">defaultCredentialsProvider</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">defaultHttpClientFactory</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">build</span><span class="o">();</span>
+
+<span class="c1">// Exchange the public credentials for an access token </span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">defaultNotihubClient</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+</code></pre><pre class="highlight javascript"><code><span class="kr">import</span> <span class="nx">Notihub</span> <span class="nx">from</span> <span class="s1">'@notihub/notihub-nodejs-sdk'</span><span class="p">;</span>
+
+<span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span>
+  <span class="na">publicKey</span><span class="p">:</span> <span class="s1">'&lt;your auth public key&gt;'</span><span class="p">,</span>
+  <span class="na">secretKey</span><span class="p">:</span> <span class="s1">'&lt;your auth secret key&gt;'</span><span class="p">,</span>
+  <span class="na">environmentClientId</span><span class="p">:</span> <span class="s1">'&lt;your auth environment client id&gt;'</span><span class="p">,</span>
+  <span class="na">environmentClientSecret</span><span class="p">:</span> <span class="s1">'&lt;your auth environment client secret&gt;'</span>
+<span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>200 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"accessToken"</span><span class="p">:</span><span class="w"> </span><span class="s2">"cbb0aa4e5e4939d9686ae380a3b14e94eb35513df24237c3506f9b21d50e9f55"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"expiresAt"</span><span class="p">:</span><span class="w"> </span><span class="mi">1570407929672</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>401 - Invalid Credentials Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">401</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid credentals"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='http-request'>HTTP Request</h3>
+<p><code>POST https://api.notihub.io/token/</code></p>
+<h3 id='response'>Response</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>accessToken</td>
+<td>String</td>
+<td>The access token to use in secured endpoints that belongs to one environment of your account.</td>
+</tr>
+<tr>
+<td>expiresAt</td>
+<td>Number</td>
+<td>6 hours ahead from now in milliseconds when the token will expire. You can use it to ask for a new token before this one expires.</td>
+</tr>
+</tbody></table>
+
+<aside class="success">
+Remember — keep your access token secure!
+</aside>
+<h2 id='using-the-access-token'>Using the Access Token</h2>
+<p>Once you obtain your access token, you can use it to access the secured endpoints like customers and messages. Set the <code>Authorization</code> header with Bearer token like this:</p>
+
+<p><code>Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;</code></p>
+<h1 id='customers'>Customers</h1>
+<p>This endpoint allows you to register you customers in Notihub platform to send messages using different mechanism like email, sms or even push messages. </p>
+
+<p>A Customer is identified by us using an auto generated UUID, but it should contain at least one of the following: an <code>externalId</code>, a phone number, or an email. 
+It can only have one externalId, we recommend to set the id that the customer has in your system, to easily understand who he is, but if you need, you can add any extra info if necessary in the metadata field. </p>
+
+<p>Keep in mind that even that a customer can have a lot of phone numbers, emails or push tokens, but the messages will only target the primary ones. </p>
+<h2 id='create-a-customer'>Create a customer</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/customers/"
+  -X POST
+  -H "Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;"
+  -d '{"status":"ENABLED", "externalId":"your-customer-id", "language":"en_US", contacts":[{"type":"EMAIL","value":"emailtest@notihub.io","primary":true,"verified":true},{"type":"PHONE","value":"123-444-XXXX","primary":false,"verified":true}]}'
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">client</span> <span class="o">=</span> <span class="n">buildClient</span><span class="o">();</span> <span class="c1">// See Authentication</span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">().</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+
+<span class="n">CreateCustomerResponse</span> <span class="n">customerResponse</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">customerService</span><span class="o">()</span>
+        <span class="o">.</span><span class="na">authenticate</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="n">CreateCustomerRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">externalId</span><span class="o">(</span><span class="s">"my-new-customer7"</span><span class="o">)</span> <span class="c1">// An id from you system for easy tracking</span>
+            <span class="o">.</span><span class="na">metadata</span><span class="o">(</span><span class="s">"some meta"</span><span class="o">)</span> <span class="c1">// Metadata not used in Notihub. </span>
+            <span class="o">.</span><span class="na">status</span><span class="o">(</span><span class="n">CustomerStatusType</span><span class="o">.</span><span class="na">ENABLED</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">language</span><span class="o">(</span><span class="s">"en_US"</span><span class="o">)</span> <span class="c1">// can be null if you want to use the default environment language. This allow the customer to override the setting</span>
+            <span class="o">.</span><span class="na">contacts</span><span class="o">(</span><span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">CreateCustomerContactRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+                <span class="o">.</span><span class="na">type</span><span class="o">(</span><span class="n">DeliveryMechanismType</span><span class="o">.</span><span class="na">EMAIL</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">value</span><span class="o">(</span><span class="s">"avalid@email.com"</span><span class="o">)</span>
+                <span class="o">.</span><span class="na">primary</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="c1">// Only one Primary email can exist. It will be used to notify the customer</span>
+                <span class="o">.</span><span class="na">verified</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="c1">// A check when false to avoid sending notifications to templates that require verification </span>
+                <span class="o">.</span><span class="na">build</span><span class="o">()))</span>
+            <span class="o">.</span><span class="na">build</span><span class="o">());</span>
+</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+
+<span class="nx">notihub</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span> 
+        <span class="na">externalId</span><span class="p">:</span> <span class="s1">'your-id'</span><span class="p">,</span> <span class="c1">// Id from you system so you can easily access to it.</span>
+        <span class="na">status</span><span class="p">:</span> <span class="s1">'ENABLED'</span><span class="p">,</span> <span class="c1">// values: ENABLED or DISABLED</span>
+        <span class="na">metadata</span><span class="p">:</span> <span class="s1">'some-metadata'</span><span class="p">,</span> <span class="c1">// optional, metadata to add your custom data, not used in Notihub.</span>
+        <span class="na">language</span><span class="p">:</span> <span class="s1">'en_US'</span><span class="p">,</span> <span class="c1">// optional, can be null if you want to use the default environment language. This allow the customer to override the setting.</span>
+        <span class="na">contact</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="na">type</span><span class="p">:</span> <span class="s1">'EMAIL'</span><span class="p">,</span>
+                <span class="na">value</span><span class="p">:</span> <span class="s1">'avalid@email.com'</span><span class="p">,</span>
+                <span class="na">primary</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="na">verified</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">]</span> <span class="c1">// optional, array of CustomerContact object</span>
+    <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">customer</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">customer</span><span class="p">.</span><span class="nx">customerId</span><span class="p">);</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Catch error here.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>201 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"customerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0f42b842-007d-4c98-9160-ae6b6e908ca0"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ENABLED"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"externalId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"your-customer-id"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en_US"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"contacts"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="s2">"contactId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EMAIL"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"emailtest@notihub.io"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"primary"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"verified"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"contactId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="s2">"PHONE"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"value"</span><span class="p">:</span><span class="s2">"123-444-XXXX"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"primary"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w"> 
+        </span><span class="s2">"verified"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>400 - Bad Request Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer requires at least a valid email, phone or external id."</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Create a customer with their contact data</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>POST https://api.notihub.io/customers/</code></p>
+
+<aside class="warning">
+If you don't set any external id, you will need to set an email or phone at least.
+</aside>
+<h3 id='body-parameters'>Body Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>externalId</td>
+<td>String</td>
+<td>No</td>
+<td>Your own ID to identify this customer in your system. Even that is not required, we recommend to set it for easily tracking with your software.</td>
+</tr>
+<tr>
+<td>status</td>
+<td>String</td>
+<td>No</td>
+<td>Current status of the customer. Could be <code>ENABLED</code> or <code>DISABLED</code>. By default will be in <code>ENABLED</code> status</td>
+</tr>
+<tr>
+<td>metadata</td>
+<td>String</td>
+<td>No</td>
+<td>Any metadata that you specified for this customer in String format.</td>
+</tr>
+<tr>
+<td>language</td>
+<td>String</td>
+<td>No</td>
+<td>The language that the customer wants to be used to receive notifications</td>
+</tr>
+<tr>
+<td>contacts</td>
+<td>Array of CustomerContact</td>
+<td>No</td>
+<td>The contact information of this customer. Contains all the info related to emails, phones, or push tokens to notify him.</td>
+</tr>
+</tbody></table>
+<h3 id='customer-contact'>Customer Contact</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>Yes</td>
+<td>The type of contact. Should be one of the following: <code>EMAIL</code>, <code>PHONE</code>, or <code>PUSH</code></td>
+</tr>
+<tr>
+<td>value</td>
+<td>String</td>
+<td>Yes</td>
+<td>The contact value. Can be an email, phone, or a push token. Will be validated against the type chosen.</td>
+</tr>
+<tr>
+<td>verified</td>
+<td>String</td>
+<td>No</td>
+<td>An indicator that represent for you if this contact data was verified. Useful when you require your email or phone to be verified to sent other templates. Default value is <code>false</code></td>
+</tr>
+<tr>
+<td>primary</td>
+<td>String</td>
+<td>No</td>
+<td>Tells if is the primary source of contact for the chosen type. We will use it when we need to contact this user with the current mechanism type. Default value is <code>false</code></td>
+</tr>
+</tbody></table>
+<h3 id='response'>Response</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>customerId</td>
+<td>String</td>
+<td>The UUID autogenerated by Notihub</td>
+</tr>
+<tr>
+<td>externalId</td>
+<td>String</td>
+<td>Your own ID to identify this customer in your system</td>
+</tr>
+<tr>
+<td>status</td>
+<td>String</td>
+<td>Current status of the customer. Could be <code>ENABLED</code> or <code>DISABLED</code></td>
+</tr>
+<tr>
+<td>language</td>
+<td>String</td>
+<td>The ID of the language that the customer wants to be used to receive notifications</td>
+</tr>
+<tr>
+<td>metadata</td>
+<td>String</td>
+<td>Any metadata that you specified for this customer in String format</td>
+</tr>
+<tr>
+<td>contacts</td>
+<td>Array of CustomerContact</td>
+<td>The contact information of this customer. Contains all the info related to emails, phones, or push tokens to notify him.</td>
+</tr>
+</tbody></table>
+<h2 id='get-a-customer'>Get a customer</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/customers/0f42b842-007d-4c98-9160-ae6b6e908ca0"
+  -H "Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;"
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">client</span> <span class="o">=</span> <span class="n">buildClient</span><span class="o">();</span> <span class="c1">// See Authentication</span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">().</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+
+<span class="n">GetCustomerResponse</span> <span class="n">getCustomerResponse</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">customerService</span><span class="o">().</span><span class="na">authenticate</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span>
+       <span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">GetCustomerRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+           <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="n">customerResponse</span><span class="o">.</span><span class="na">getCustomerId</span><span class="o">())</span>
+           <span class="o">.</span><span class="na">build</span><span class="o">());</span>
+</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+
+<span class="nx">notihub</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'customer-id'</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">customer</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">customer</span><span class="p">.</span><span class="nx">customerId</span><span class="p">);</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Catch error here.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>200 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"customerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0f42b842-007d-4c98-9160-ae6b6e908ca0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"externalId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"your-custom-id"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ENABLED"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en_US"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contacts"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="s2">"contactId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EMAIL"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"emailtest@notihub.io"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"primary"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"verified"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"contactId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="s2">"PHONE"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"value"</span><span class="p">:</span><span class="s2">"123-444-XXXX"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"primary"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w"> 
+        </span><span class="s2">"verified"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>404 - Not Found Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer Not found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Returns a customer data, with all their contact info and metadata.</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET https://api.notihub.io/customers/&lt;ID&gt;</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the customer to retrieve.</td>
+</tr>
+</tbody></table>
+<h3 id='response-2'>Response</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>customerId</td>
+<td>String</td>
+<td>The UUID autogenerated by Notihub</td>
+</tr>
+<tr>
+<td>externalId</td>
+<td>String</td>
+<td>Your own ID to identify this customer in your system</td>
+</tr>
+<tr>
+<td>status</td>
+<td>String</td>
+<td>Current status of the customer. Could be <code>ENABLED</code> or <code>DISABLED</code></td>
+</tr>
+<tr>
+<td>language</td>
+<td>String</td>
+<td>The ID of the language that the customer wants to be used to receive notifications</td>
+</tr>
+<tr>
+<td>metadata</td>
+<td>String</td>
+<td>Any metadata that you specified for this customer in String format</td>
+</tr>
+<tr>
+<td>contacts</td>
+<td>Array of CustomerContact</td>
+<td>The contact information of this customer. Contains all the info related to emails, phones, or push tokens to notify him.</td>
+</tr>
+</tbody></table>
+<h2 id='update-a-customer'>Update a customer</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/customers/0f42b842-007d-4c98-9160-ae6b6e908ca0"
+  -X PUT
+  -H "Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;"
+  -d '{"status":"ENABLED", "externalId":"your-customer-id", "contacts":[{"type":"EMAIL","value":"emailtest@notihub.io","primary":true,"verified":true},{"type":"PHONE","value":"123-444-XXXX","primary":false,"verified":true}]}'
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">client</span> <span class="o">=</span> <span class="n">buildClient</span><span class="o">();</span> <span class="c1">// See Authentication</span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">().</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+
+<span class="n">UpdateCustomerResponse</span> <span class="n">updateCustomerResponse</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">customerService</span><span class="o">().</span><span class="na">authenticate</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span>
+       <span class="o">.</span><span class="na">update</span><span class="o">(</span><span class="n">UpdateCustomerRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="n">cusstomerResponse</span><span class="o">.</span><span class="na">getCustomerId</span><span class="o">())</span>
+            <span class="o">.</span><span class="na">externalId</span><span class="o">(</span><span class="s">"my-new-customer9"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">metadata</span><span class="o">(</span><span class="s">"updated meta"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">status</span><span class="o">(</span><span class="n">CustomerStatusType</span><span class="o">.</span><span class="na">ENABLED</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">language</span><span class="o">(</span><span class="s">"es_AR"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">build</span><span class="o">());</span>
+
+</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+
+<span class="nx">notihub</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span>
+        <span class="na">customerId</span><span class="p">:</span> <span class="s1">'customer-id'</span><span class="p">,</span>
+        <span class="na">externalId</span><span class="p">:</span> <span class="s1">'your-id'</span><span class="p">,</span> <span class="c1">// Id from you system so you can easily access to it.</span>
+        <span class="na">status</span><span class="p">:</span> <span class="s1">'ENABLED'</span><span class="p">,</span> <span class="c1">// values: ENABLED or DISABLED</span>
+        <span class="na">metadata</span><span class="p">:</span> <span class="s1">'some-metadata'</span><span class="p">,</span> <span class="c1">// optional, metadata to add your custom data, not used in Notihub.</span>
+        <span class="na">language</span><span class="p">:</span> <span class="s1">'en_US'</span><span class="p">,</span> <span class="c1">// optional, can be null if you want to use the default environment language. This allow the customer to override the setting.</span>
+        <span class="na">contact</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+                <span class="na">type</span><span class="p">:</span> <span class="s1">'EMAIL'</span><span class="p">,</span>
+                <span class="na">value</span><span class="p">:</span> <span class="s1">'avalid@email.com'</span><span class="p">,</span>
+                <span class="na">primary</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+                <span class="na">verified</span><span class="p">:</span> <span class="kc">true</span>
+            <span class="p">}</span>
+        <span class="p">]</span> <span class="c1">// optional, array of CustomerContact object</span>
+    <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">customer</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">customer</span><span class="p">.</span><span class="nx">customerId</span><span class="p">);</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Catch error here.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>201 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"customerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0f42b842-007d-4c98-9160-ae6b6e908ca0"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ENABLED"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"externalId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"your-new-customer-id"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"contacts"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="s2">"contactId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EMAIL"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"anotheremail@notihub.io"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"primary"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"verified"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"contactId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="s2">"PHONE"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"value"</span><span class="p">:</span><span class="s2">"123-444-XXXX"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"primary"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w"> 
+        </span><span class="s2">"verified"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>400 - Bad Request Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer requires at least a valid email, phone or external id."</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Update a customer without changing their contact data.</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>PUT https://api.notihub.io/customers/&lt;ID&gt;</code></p>
+
+<aside class="warning">
+If you don't set any external id, and your customer doesn't has at least an email or phone your request will fail.
+</aside>
+<h3 id='body-parameters-2'>Body Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>externalId</td>
+<td>String</td>
+<td>No</td>
+<td>Your own ID to identify this customer in your system. Even that is not required, we recommend to set it for easily tracking with your software.</td>
+</tr>
+<tr>
+<td>status</td>
+<td>String</td>
+<td>No</td>
+<td>Current status of the customer. Could be <code>ENABLED</code> or <code>DISABLED</code>. By default will be in <code>ENABLED</code> status</td>
+</tr>
+<tr>
+<td>metadata</td>
+<td>String</td>
+<td>No</td>
+<td>Any metadata that you specified for this customer in String format.</td>
+</tr>
+<tr>
+<td>language</td>
+<td>String</td>
+<td>No</td>
+<td>The ID of the language that the customer wants to be used to receive notifications</td>
+</tr>
+</tbody></table>
+<h3 id='response-3'>Response</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>customerId</td>
+<td>String</td>
+<td>The UUID autogenerated by Notihub</td>
+</tr>
+<tr>
+<td>externalId</td>
+<td>String</td>
+<td>Your own ID to identify this customer in your system</td>
+</tr>
+<tr>
+<td>status</td>
+<td>String</td>
+<td>Current status of the customer. Could be <code>ENABLED</code> or <code>DISABLED</code></td>
+</tr>
+<tr>
+<td>language</td>
+<td>String</td>
+<td>The ID of the language that the customer wants to be used to receive notifications</td>
+</tr>
+<tr>
+<td>metadata</td>
+<td>String</td>
+<td>Any metadata that you specified for this customer in String format</td>
+</tr>
+<tr>
+<td>contacts</td>
+<td>Array of CustomerContact</td>
+<td>The contact information of this customer. Contains all the info related to emails, phones, or push tokens to notify him.</td>
+</tr>
+</tbody></table>
+<h2 id='delete-a-customer'>Delete a customer</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/customers/0f42b842-007d-4c98-9160-ae6b6e908ca0"
+  -X DELETE
+  -H "Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;"
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">client</span> <span class="o">=</span> <span class="n">buildClient</span><span class="o">();</span> <span class="c1">// See Authentication</span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">().</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+
+<span class="n">client</span><span class="o">.</span><span class="na">customerService</span><span class="o">()</span>
+        <span class="o">.</span><span class="na">authenticate</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">delete</span><span class="o">(</span><span class="n">DeleteCustomerRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="s">"customer-uuid"</span><span class="o">)</span> 
+            <span class="o">.</span><span class="na">build</span><span class="o">());</span>
+</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+
+<span class="nx">notihub</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="s1">'customer-id'</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">customer</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">customer</span><span class="p">.</span><span class="nx">customerId</span><span class="p">);</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Catch error here.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>200 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>404 - Not Found Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer Not found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Delete a customer with his preferences. </p>
+<h3 id='http-request-4'>HTTP Request</h3>
+<p><code>DELETE https://api.notihub.io/customers/&lt;ID&gt;</code></p>
+<h3 id='url-parameters-2'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the customer to delete.</td>
+</tr>
+</tbody></table>
+<h2 id='list-and-search-customers'>List and search customers</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/customers/"
+  -H "Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;"
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">client</span> <span class="o">=</span> <span class="n">buildClient</span><span class="o">();</span> <span class="c1">// See Authentication</span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">().</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+
+<span class="n">ListCustomerResponse</span><span class="o">[]</span> <span class="n">customerResponse</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">customerService</span><span class="o">()</span>
+         <span class="o">.</span><span class="na">authenticate</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span>
+         <span class="o">.</span><span class="na">list</span><span class="o">(</span><span class="n">ListCustomerRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+               <span class="o">.</span><span class="na">page</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
+               <span class="o">.</span><span class="na">limit</span><span class="o">(</span><span class="mi">50</span><span class="o">)</span>    
+               <span class="o">.</span><span class="na">search</span><span class="o">(</span><span class="s">"some-email@email.com"</span><span class="o">)</span> 
+               <span class="o">.</span><span class="na">build</span><span class="o">());</span>
+</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+
+<span class="nx">notihub</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">list</span><span class="p">({</span> 
+        <span class="na">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> 
+        <span class="na">page</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="na">search</span><span class="p">:</span> <span class="s1">'some@email.com'</span><span class="p">,</span> <span class="c1">// optional</span>
+        <span class="na">actives</span><span class="p">:</span> <span class="kc">true</span> <span class="c1">// optional</span>
+    <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">customers</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">customers</span><span class="p">));</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span>  <span class="c1">// Catch error here.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>200 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[{</span><span class="w">
+  </span><span class="s2">"customerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0f42b842-007d-4c98-9160-ae6b6e908ca0"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"externalId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"your-custom-id"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ENABLED"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"en_US"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contacts"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="s2">"contactId"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EMAIL"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"emailtest@notihub.io"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"primary"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"verified"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"contactId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="s2">"PHONE"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"value"</span><span class="p">:</span><span class="s2">"123-444-XXXX"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"primary"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w"> 
+        </span><span class="s2">"verified"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+</span><span class="p">},</span><span class="w">
+</span><span class="p">{</span><span class="w">
+  </span><span class="s2">"customerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"af32b842-007d-4c98-9160-ae6b6e908ca1"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"externalId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"your-custom-id-2"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DISABLED"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"es_AR"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"contacts"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="s2">"contactId"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EMAIL"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"emailtest@notihub.io"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"primary"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"verified"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"contactId"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"type"</span><span class="p">:</span><span class="s2">"PUSH"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"value"</span><span class="p">:</span><span class="s2">"push-token"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"primary"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w"> 
+        </span><span class="s2">"verified"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+    </span><span class="p">}]</span><span class="w">
+</span><span class="p">}]</span><span class="w">
+</span></code></pre>
+<p>This section outlines how to retrieve your list of created Customers. Customer search is supported by passing an additional search query string parameter which searches on externalId, email, and phone fields of a Customer.</p>
+<h3 id='http-request-5'>HTTP Request</h3>
+<p><code>GET https://api.notihub.io/customers/</code></p>
+<h3 id='pagination'>Pagination</h3>
+<p>By default, an embedded list of 25 customers are returned and are sorted by created timestamp. To page through the remaining list, you&#39;ll specify a combination of <code>limit</code> and <code>page</code> as query string parameters. Limit can have a max value of 200 customer objects. </p>
+<h3 id='example-http-request'>Example HTTP Request</h3>
+<p><code>GET https://api.notihub.io/customers/?limit=5&amp;page=25</code></p>
+<h3 id='searching-customers'>Searching Customers</h3>
+<p>You can search for Customers based on externalId, email or phone by appending the search query string parameter to the endpoint. For example, if you would like to search for Customers with the first name 
+&quot;Will&quot;, you can append the additional parameter search to the request URL.</p>
+<h3 id='example-http-request-2'>Example HTTP Request</h3>
+<p><code>GET https://api.notihub.io/customers/?search=Jane</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>limit</td>
+<td>Number</td>
+<td>No</td>
+<td>Total max number of elements to return. It can have a max value of 200</td>
+</tr>
+<tr>
+<td>page</td>
+<td>Number</td>
+<td>No</td>
+<td>Starting page to return in the query. Start on 0.</td>
+</tr>
+<tr>
+<td>search</td>
+<td>String</td>
+<td>No</td>
+<td>Filter the results that match any of the fields <code>externalId</code> or <code>contactData</code> with the search term</td>
+</tr>
+<tr>
+<td>actives</td>
+<td>Boolean</td>
+<td>No</td>
+<td>Filter the results for only enabled users</td>
+</tr>
+</tbody></table>
+<h3 id='response-4'>Response</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>customerId</td>
+<td>String</td>
+<td>The UUID autogenerated by Notihub</td>
+</tr>
+<tr>
+<td>externalId</td>
+<td>String</td>
+<td>Your own ID to identify this customer in your system</td>
+</tr>
+<tr>
+<td>status</td>
+<td>String</td>
+<td>Current status of the customer. Could be <code>ENABLED</code> or <code>DISABLED</code></td>
+</tr>
+<tr>
+<td>language</td>
+<td>String</td>
+<td>The language that the customer wants to be used to receive notifications</td>
+</tr>
+<tr>
+<td>metadata</td>
+<td>String</td>
+<td>Any metadata that you specified for this customer in String format</td>
+</tr>
+<tr>
+<td>contacts</td>
+<td>Array of CustomerContact</td>
+<td>The contact information of this customer. Contains all the info related to emails, phones, or push tokens to notify him.</td>
+</tr>
+</tbody></table>
+<h1 id='customer-contacts'>Customer Contacts</h1>
+<p>This endpoint allows you to create, patch or delete customer contact entries. An entry can be an email, or a phone number or a push token from a device. </p>
+
+<p>Only the primary contact entries will be used to notify the user, and you can&#39;t have more than entry for the same type. </p>
+
+<p>The verified flag will allow you to send your notifications only if the user verify that entry before. This supports the normal verify email &amp; phone flows. Push tokens are verified by default. </p>
+<h2 id='create-a-contact-entry'>Create a contact entry</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/customers/0f42b842-007d-4c98-9160-ae6b6e908ca0/contacts"
+  -X POST
+  -H "Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;"
+  -d '{"type":"EMAIL","value":"secondtest@notihub.io","primary":false,"verified":true}'
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">client</span> <span class="o">=</span> <span class="n">buildClient</span><span class="o">();</span> <span class="c1">// See Authentication</span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">().</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+
+<span class="n">CreateCustomerContactResponse</span> <span class="n">contactResponse</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">customerContactService</span><span class="o">()</span>
+        <span class="o">.</span><span class="na">authenticate</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">create</span><span class="o">(</span><span class="n">CreateCustomerContactRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="s">"customer-id"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">type</span><span class="o">(</span><span class="n">DeliveryMechanismType</span><span class="o">.</span><span class="na">EMAIL</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">value</span><span class="o">(</span><span class="s">"avalid@email.com"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">primary</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="c1">// Only one Primary email can exist. It will be used to notify the customer</span>
+            <span class="o">.</span><span class="na">verified</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="c1">// A check when false to avoid sending notifications to templates that require verification </span>
+            <span class="o">.</span><span class="na">build</span><span class="o">());</span>
+</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+
+<span class="nx">notihub</span><span class="p">.</span><span class="nx">customerContacts</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span> 
+        <span class="na">customerId</span><span class="p">:</span> <span class="s1">'customer-id'</span><span class="p">,</span>
+        <span class="na">type</span><span class="p">:</span> <span class="s1">'EMAIL'</span><span class="p">,</span>
+        <span class="na">value</span><span class="p">:</span> <span class="s1">'avalid@email.com'</span><span class="p">,</span>
+        <span class="na">primary</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Only one Primary email can exist. It will be used to notify the customer</span>
+        <span class="na">verified</span><span class="p">:</span> <span class="kc">true</span> <span class="c1">// A check when false to avoid sending notifications to templates that require verification</span>
+    <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">customerContact</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">customerContact</span><span class="p">.</span><span class="nx">contactId</span><span class="p">);</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Catch error here.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>201 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"contactId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EMAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"secondtest@notihub.io"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"primary"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"verified"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+</span><span class="p">}</span><span class="w">   
+</span></code></pre>
+<blockquote>
+<p>400 - Bad Request Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid email"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>404 - Not Found Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer Not found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Create a contact data entry for a customer</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>POST https://api.notihub.io/customers/&lt;ID&gt;/contacts</code></p>
+<h3 id='body-parameters'>Body Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>Yes</td>
+<td>The type of contact. Should be one of the following: <code>EMAIL</code>, <code>PHONE</code>, or <code>PUSH</code></td>
+</tr>
+<tr>
+<td>value</td>
+<td>String</td>
+<td>Yes</td>
+<td>The contact value. Can be an email, phone, or a push token. Will be validated against the type chosen.</td>
+</tr>
+<tr>
+<td>verified</td>
+<td>String</td>
+<td>No</td>
+<td>An indicator that represent for you if this contact data was verified. Useful when you require your email or phone to be verified to sent other templates. Default value is <code>false</code></td>
+</tr>
+<tr>
+<td>primary</td>
+<td>String</td>
+<td>No</td>
+<td>Tells if is the primary source of contact for the chosen type. We will use it when we need to contact this user with the current mechanism type. Default value is <code>false</code></td>
+</tr>
+</tbody></table>
+<h3 id='response'>Response</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>contactId</td>
+<td>String</td>
+<td>The numeric id of this entry made by Notihub</td>
+</tr>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>value</td>
+<td>String</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>verified</td>
+<td>String</td>
+<td>No</td>
+</tr>
+<tr>
+<td>primary</td>
+<td>String</td>
+<td>No</td>
+</tr>
+</tbody></table>
+<h2 id='update-a-contact-entry'>Update a contact entry</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/customers/0f42b842-007d-4c98-9160-ae6b6e908ca0/contacts/2"
+  -X PUT
+  -H "Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;"
+  -d '{"type":"EMAIL","value":"second-third@notihub.io","primary":false,"verified":false}'
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">client</span> <span class="o">=</span> <span class="n">buildClient</span><span class="o">();</span> <span class="c1">// See Authentication</span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">().</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+
+<span class="n">UpdateCustomerContactResponse</span> <span class="n">contactResponse</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">customerContactService</span><span class="o">()</span>
+        <span class="o">.</span><span class="na">authenticate</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">update</span><span class="o">(</span><span class="n">UpdateCustomerContactRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">contactId</span><span class="o">(</span><span class="mi">3</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="s">"customer-id"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">type</span><span class="o">(</span><span class="n">DeliveryMechanismType</span><span class="o">.</span><span class="na">EMAIL</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">value</span><span class="o">(</span><span class="s">"avalid@email.com"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">primary</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="c1">// Only one Primary email can exist. It will be used to notify the customer</span>
+            <span class="o">.</span><span class="na">verified</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="c1">// A check when false to avoid sending notifications to templates that require verification </span>
+            <span class="o">.</span><span class="na">build</span><span class="o">());</span>
+</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+
+<span class="nx">notihub</span><span class="p">.</span><span class="nx">customerContacts</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span> 
+        <span class="na">contactId</span><span class="p">:</span> <span class="s1">'contact-id'</span><span class="p">,</span>
+        <span class="na">customerId</span><span class="p">:</span> <span class="s1">'customer-id'</span><span class="p">,</span>
+        <span class="na">type</span><span class="p">:</span> <span class="s1">'EMAIL'</span><span class="p">,</span>
+        <span class="na">value</span><span class="p">:</span> <span class="s1">'avalid@email.com'</span><span class="p">,</span>
+        <span class="na">primary</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// Only one Primary email can exist. It will be used to notify the customer</span>
+        <span class="na">verified</span><span class="p">:</span> <span class="kc">true</span> <span class="c1">// A check when false to avoid sending notifications to templates that require verification</span>
+    <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">customerContact</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">customerContact</span><span class="p">.</span><span class="nx">contactId</span><span class="p">);</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Catch error here.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>200 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"contactId"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EMAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"second-third@notihub.io"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"primary"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"verified"</span><span class="p">:</span><span class="kc">false</span><span class="w">
+</span><span class="p">}</span><span class="w">   
+</span></code></pre>
+<blockquote>
+<p>400 - Bad Request Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid email"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>404 - Contact Entry Not Found Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Contact Entry Not found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>404 - Customer Not Found Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer Not found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Update a contact data entry for a customer</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>PUT https://api.notihub.io/customers/&lt;Customer-ID&gt;/contacts/&lt;ID&gt;</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Customer-ID</td>
+<td>String</td>
+<td>Yes</td>
+<td>The UUID of the customer</td>
+</tr>
+<tr>
+<td>ID</td>
+<td>Number</td>
+<td>Yes</td>
+<td>The contact entry id</td>
+</tr>
+</tbody></table>
+<h3 id='body-parameters-2'>Body Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>Yes</td>
+<td>The type of contact. Should be one of the following: <code>EMAIL</code>, <code>PHONE</code>, or <code>PUSH</code></td>
+</tr>
+<tr>
+<td>value</td>
+<td>String</td>
+<td>Yes</td>
+<td>The contact value. Can be an email, phone, or a push token. Will be validated against the type chosen.</td>
+</tr>
+<tr>
+<td>verified</td>
+<td>String</td>
+<td>No</td>
+<td>An indicator that represent for you if this contact data was verified. Useful when you require your email or phone to be verified to sent other templates. Default value is <code>false</code></td>
+</tr>
+<tr>
+<td>primary</td>
+<td>String</td>
+<td>No</td>
+<td>Tells if is the primary source of contact for the chosen type. We will use it when we need to contact this user with the current mechanism type. Default value is <code>false</code></td>
+</tr>
+</tbody></table>
+<h3 id='response-2'>Response</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>contactId</td>
+<td>String</td>
+<td>The numeric id of this entry made by Notihub</td>
+</tr>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>value</td>
+<td>String</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>verified</td>
+<td>String</td>
+<td>No</td>
+</tr>
+<tr>
+<td>primary</td>
+<td>String</td>
+<td>No</td>
+</tr>
+</tbody></table>
+<h2 id='delete-a-contact-entry'>Delete a contact entry</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/customers/0f42b842-007d-4c98-9160-ae6b6e908ca0/contacts/2"
+  -X DELETE
+  -H "Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;"
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">client</span> <span class="o">=</span> <span class="n">buildClient</span><span class="o">();</span> <span class="c1">// See Authentication</span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">().</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+
+<span class="n">client</span><span class="o">.</span><span class="na">customerContactService</span><span class="o">()</span>
+        <span class="o">.</span><span class="na">authenticate</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">delete</span><span class="o">(</span><span class="n">DeleteCustomerRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">contactId</span><span class="o">(</span><span class="mi">3</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="s">"customer-id"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">build</span><span class="o">());</span>
+</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+
+<span class="nx">notihub</span><span class="p">.</span><span class="nx">customerContacts</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="s1">'contact-id'</span><span class="p">,</span> <span class="s1">'customer-id'</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
+        <span class="c1">// Empty response</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Catch error here.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>200 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{}</span><span class="w">  
+</span></code></pre>
+<blockquote>
+<p>404 - Contact Entry Not Found Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Contact Entry Not found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>404 - Customer Not Found Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer Not found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Delete a contact data entry for a customer</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>DELETE https://api.notihub.io/customers/&lt;Customer-ID&gt;/contacts/&lt;ID&gt;</code></p>
+<h3 id='url-parameters-2'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Customer-ID</td>
+<td>String</td>
+<td>Yes</td>
+<td>The UUID of the customer</td>
+</tr>
+<tr>
+<td>ID</td>
+<td>Number</td>
+<td>Yes</td>
+<td>The contact entry id</td>
+</tr>
+</tbody></table>
+<h1 id='customer-preferences'>Customer Preferences</h1>
+<p>This endpoint allows you to register, update and retrieve you customer preferences. A customer can enable or disable different mechanism types for different groups of notifications. </p>
+
+<p>If customer doesn&#39;t have any preference set at all, a notification message will use the mechanism supported for the specified template. </p>
+<h2 id='create-or-update-customer-preferences'>Create or update customer preferences</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/customers/0f42b842-007d-4c98-9160-ae6b6e908ca0/preferences/"
+  -X POST
+  -H "Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;"
+  -d '
+  [{
+    "templateGroupId": "system.products",
+    "mechanisms": ["EMAIL","PUSH"],
+  },{
+    "templateGroupId": "system.friends",
+    "mechanisms": ["PUSH"],
+  }]
+'
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">client</span> <span class="o">=</span> <span class="n">buildClient</span><span class="o">();</span> <span class="c1">// See Authentication</span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">().</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+
+<span class="n">CreateCustomerPreferenceResponse</span> <span class="n">createCustomerPreferenceResponse</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">customerService</span><span class="o">().</span><span class="na">authenticate</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">CreateCustomerPreferenceRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="s">"customer-id"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">templateGroupId</span><span class="o">(</span><span class="s">"template-group-id"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">mechanisms</span><span class="o">(</span><span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">DeliveryMechanismType</span><span class="o">.</span><span class="na">EMAIL</span><span class="o">,</span> <span class="n">DeliveryMechanismType</span><span class="o">.</span><span class="na">PUSH</span><span class="o">))</span>
+            <span class="o">.</span><span class="na">build</span><span class="o">());</span>
+</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+
+<span class="nx">notihub</span><span class="p">.</span><span class="nx">customerContacts</span><span class="p">.</span><span class="nx">createOrUpdate</span><span class="p">({</span> 
+        <span class="na">customerId</span><span class="p">:</span> <span class="s1">'customer-id'</span><span class="p">,</span>
+        <span class="na">templateGroupId</span><span class="p">:</span> <span class="s1">'template-group-id'</span><span class="p">,</span>
+        <span class="na">mechanisms</span><span class="p">:</span> <span class="p">[</span><span class="s1">'EMAIL'</span><span class="p">,</span> <span class="s1">'PUSH'</span><span class="p">]</span> <span class="c1">// Values can be EMAIL, PUSH and/or SMS. NONE is used to turn off.</span>
+    <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">customerPreference</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">customerPreference</span><span class="p">.</span><span class="nx">templateGroupId</span><span class="p">);</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Catch error here.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>201 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[{</span><span class="w">
+    </span><span class="s2">"templateGroupId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"system.products"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"mechanisms"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"EMAIL"</span><span class="p">,</span><span class="s2">"PUSH"</span><span class="p">]</span><span class="w">
+  </span><span class="p">},{</span><span class="w">
+    </span><span class="s2">"templateGroupId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"system.friends"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"mechanisms"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"PUSH"</span><span class="p">]</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>404 - Customer Not Found Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer Not found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='http-request'>HTTP Request</h3>
+<p><code>POST https://api.notihub.io/customers/&lt;ID&gt;/preferences/</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the customer to create a preference.</td>
+</tr>
+</tbody></table>
+<h3 id='body-parameters'>Body Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>templateGroupId</td>
+<td>String</td>
+<td>Yes</td>
+<td>The ID of the matching group that template mechanism settings will be overwritten by this customer</td>
+</tr>
+<tr>
+<td>mechanisms</td>
+<td>Array</td>
+<td>No</td>
+<td>An array of values <code>EMAIL</code>, <code>PHONE</code>, <code>PUSH</code>, or <code>NONE</code> to turn off.</td>
+</tr>
+</tbody></table>
+<h3 id='response'>Response</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>templateGroupId</td>
+<td>String</td>
+<td>The ID of the matching group that template mechanism settings will be overwritten by this customer</td>
+</tr>
+<tr>
+<td>mechanisms</td>
+<td>Array</td>
+<td>An array of values <code>EMAIL</code>, <code>PHONE</code>, <code>PUSH</code>, or <code>NONE</code> to turn off.</td>
+</tr>
+</tbody></table>
+<h2 id='retrieve-customer-preferences'>Retrieve customer preferences</h2>
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/customers/0f42b842-007d-4c98-9160-ae6b6e908ca0/preferences/"
+  -H "Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;"
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">client</span> <span class="o">=</span> <span class="n">buildClient</span><span class="o">();</span> <span class="c1">// See Authentication</span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">().</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+
+<span class="n">GetCustomerPreferenceResponse</span> <span class="n">getCustomerPreferenceResponse</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">customerService</span><span class="o">().</span><span class="na">authenticate</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">GetCustomerPreferenceRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="s">"customer-id"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">build</span><span class="o">());</span>
+</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+
+<span class="nx">notihub</span><span class="p">.</span><span class="nx">customerContacts</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'customer-id'</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">customerPreference</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">customerPreference</span><span class="p">.</span><span class="nx">templateGroupId</span><span class="p">);</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Catch error here.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>200 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">[{</span><span class="w">
+    </span><span class="s2">"templateGroupId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"system.products"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"mechanisms"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"EMAIL"</span><span class="p">,</span><span class="s2">"PUSH"</span><span class="p">]</span><span class="w">
+  </span><span class="p">},{</span><span class="w">
+    </span><span class="s2">"templateGroupId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"system.friends"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"mechanisms"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"PUSH"</span><span class="p">]</span><span class="w">
+ </span><span class="p">}]</span><span class="w">
+
+</span></code></pre>
+<blockquote>
+<p>404 - Customer Not Found Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer Not found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>Get the current customer preferences.</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET https://api.notihub.io/customers/&lt;ID&gt;/preferences/</code></p>
+<h3 id='url-parameters-2'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the customer to retrieve his preferences.</td>
+</tr>
+</tbody></table>
+<h3 id='response-2'>Response</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>templateGroupId</td>
+<td>String</td>
+<td>The ID of the matching group that template mechanism settings will be overwritten by this customer</td>
+</tr>
+<tr>
+<td>mechanisms</td>
+<td>Array</td>
+<td>An array of values <code>EMAIL</code>, <code>PHONE</code>, <code>PUSH</code>, or <code>NONE</code> to turn off.</td>
+</tr>
+</tbody></table>
+<h1 id='messages'>Messages</h1>
+<p>A message will follow a set of rules to be delivered to your customers: </p>
+
+<ul>
+<li>API will search for your template, and the configured mechanisms and languages that can be delivered for that specific template version.</li>
+<li>Then will search for your specific customer delivery settings for the group that the template belongs to and the customer preference to be notified with.</li>
+<li>Then will check if the customer has any contact data matching the selected preference mechanism that will be used.</li>
+<li>Then will search for a configured provider that supports that mechanism in your account, and will send one notification for each mechanism with a valid provider. </li>
+</ul>
+
+<p>Messages can be dinamically filled with your own model structure. And they can also be forced to send in the mechanism you want, to achieve an email verification. </p>
+<h2 id='send-a-message'>Send a message</h2>
+<p>This endpoint allows you to send messages to you customers with your predefined templates and customer preferences to select the matching selections for delivery the notifications. </p>
+
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/messages/"
+  -X POST
+  -H "Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;"
+  -d '{"customerId": "0f42b842-007d-4c98-9160-ae6b6e908ca0", "templateId":"email.verification.link", "model": {"displayName": "Sky Walk"}}'
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">client</span> <span class="o">=</span> <span class="n">buildClient</span><span class="o">();</span> <span class="c1">// See Authentication</span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">().</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+
+<span class="n">SendMessageResponse</span> <span class="n">messageResponse</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">messageService</span><span class="o">().</span><span class="na">authenticate</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">send</span><span class="o">(</span><span class="n">SendMessageRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">templateId</span><span class="o">(</span><span class="s">"your-template-id"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="s">"your-customer-id"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">model</span><span class="o">(</span><span class="s">"{}"</span><span class="o">)</span> <span class="c1">// Can be null or any valid json. </span>
+            <span class="o">.</span><span class="na">build</span><span class="o">());</span>
+</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+
+<span class="nx">notihub</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span> 
+        <span class="na">templateId</span><span class="p">:</span> <span class="s1">'your-template-id'</span><span class="p">,</span> 
+        <span class="na">customerId</span><span class="p">:</span> <span class="s1">'your-customer-id'</span><span class="p">,</span>
+        <span class="na">force</span><span class="p">:</span> <span class="p">[</span><span class="s1">'EMAIL'</span><span class="p">],</span> <span class="c1">// optional</span>
+        <span class="na">model</span><span class="p">:</span> <span class="p">{}</span> <span class="c1">// optional, value can be any valid json.</span>
+    <span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">message</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">message</span><span class="p">.</span><span class="nx">messageId</span><span class="p">);</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Catch error here.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>200 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"messageId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d545490f-46f7-4e31-aaa5-94d06fdf3f60"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>404 - Customer Not Found Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Customer Not found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>404 - Template Not Found Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Template Not found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='http-request'>HTTP Request</h3>
+<p><code>POST https://api.notihub.io/messages/</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the customer to post a message.</td>
+</tr>
+</tbody></table>
+<h3 id='body-parameters'>Body Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>customerId</td>
+<td>String</td>
+<td>Yes</td>
+<td>The ID of the target customer</td>
+</tr>
+<tr>
+<td>templateId</td>
+<td>String</td>
+<td>Yes</td>
+<td>The ID of the template to be used in the notification message</td>
+</tr>
+<tr>
+<td>force</td>
+<td>Array</td>
+<td>No</td>
+<td>If present, we will force the notification delivery to the mechanism present in this value. It could be an array of the following: <code>EMAIL</code>, <code>PHONE</code> or <code>PUSH</code></td>
+</tr>
+<tr>
+<td>model</td>
+<td>JSON Object</td>
+<td>No</td>
+<td>A JSON valid data model, that will be used to replace the property values defined in the template</td>
+</tr>
+</tbody></table>
+<h3 id='response'>Response</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>messageId</td>
+<td>String</td>
+<td>A UUID identifier for your message sent. You can use it to retrieve information about each delivery with their status.</td>
+</tr>
+</tbody></table>
+<h2 id='retrieve-a-message'>Retrieve a message</h2>
+<p>This endpoint allows you to get the delivery information about a message. Note that even we queued a message to be sent inmediately, sent to multiple providers can take some seconds and info will be updated as soon as posible. </p>
+
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/messages/d545490f-46f7-4e31-aaa5-94d06fdf3f60/"
+  -H "Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;"
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">client</span> <span class="o">=</span> <span class="n">buildClient</span><span class="o">();</span> <span class="c1">// See Authentication</span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">().</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+
+<span class="n">GetMessageResponse</span> <span class="n">messageResponse</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">messageService</span><span class="o">().</span><span class="na">authenticate</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">GetMessageRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+        <span class="o">.</span><span class="na">messageId</span><span class="o">(</span><span class="s">"your-message-id"</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">build</span><span class="o">());</span>
+</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+
+<span class="nx">notihub</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'your-message-id'</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">message</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">message</span><span class="p">.</span><span class="nx">messageId</span><span class="p">);</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Catch error here.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>200 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"messageId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d545490f-46f7-4e31-aaa5-94d06fdf3f60"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"request"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"customerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0f42b842-007d-4c98-9160-ae6b6e908ca0"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"templateId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"users.membership.purchased"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{'membership': 'GOLD_MEMBER'}"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"template"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+     </span><span class="s2">"templateId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"users.membership.purchased"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"templateGroupId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"memberships"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"es_AR"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"supportedMechanisms"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"EMAIL"</span><span class="p">,</span><span class="w"> </span><span class="s2">"PUSH"</span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"customer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"customerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0f42b842-007d-4c98-9160-ae6b6e908ca0"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"languagePreference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"es_AR"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"mechanismPreference"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"PUSH"</span><span class="p">,</span><span class="s2">"PHONE"</span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"deliveries"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="s2">"mechanism"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EMAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SENDGRID"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SKIPPED_BY_CUSTOMER_MECHANISM_PREFERENCE"</span><span class="w">
+  </span><span class="p">},{</span><span class="w">
+    </span><span class="s2">"mechanism"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PUSH"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FIREBASE"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WAITING_IN_QUEUE"</span><span class="w">
+  </span><span class="p">},{</span><span class="w">
+    </span><span class="s2">"mechanism"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PHONE"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TWILIO"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SKIPPED_BY_CUSTOMER_LANGUAGE_PREFERENCE"</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>404 - Message Not Found Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Message Not found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET https://api.notihub.io/messages/&lt;ID&gt;</code></p>
+<h3 id='url-parameters-2'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the message to be retrieved.</td>
+</tr>
+</tbody></table>
+<h3 id='response-2'>Response</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>messageId</td>
+<td>String</td>
+<td>A UUID identifier for your message sent. You can use it to retrieve information about deliveries.</td>
+</tr>
+</tbody></table>
+<h2 id='list-or-search-messages'>List or search messages</h2>
+<p>This endpoint allows you to get the delivery information about a message. Note that even we queued a message to be sent inmediately, sent to multiple providers can take some seconds and info will be updated as soon as posible. </p>
+
+<blockquote>
+<p>Request</p>
+</blockquote>
+<pre class="highlight plaintext"><code>curl "https://api.notihub.io/messages/"
+  -H "Authorization: Bearer &lt;&lt;your-access-token&gt;&gt;"
+</code></pre><pre class="highlight java tab-java"><code><span class="n">NotihubClient</span> <span class="n">client</span> <span class="o">=</span> <span class="n">buildClient</span><span class="o">();</span> <span class="c1">// See Authentication</span>
+<span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">().</span><span class="na">exchangeCredentials</span><span class="o">();</span>
+
+<span class="n">ListMessageResponse</span><span class="o">[]</span> <span class="n">messageResponse</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="na">messageService</span><span class="o">().</span><span class="na">authenticate</span><span class="o">(</span><span class="n">accessToken</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">ListMessageRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">limit</span><span class="o">(</span><span class="mi">10</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">page</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">build</span><span class="o">());</span>
+</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+
+<span class="nx">notihub</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">list</span><span class="p">({</span> <span class="na">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">page</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+    <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">messages</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">messages</span><span class="p">));</span>
+    <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="o">=&gt;</span> <span class="p">{</span>  <span class="c1">// Catch error here.</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">)</span>
+    <span class="p">});</span>
+</code></pre>
+<blockquote>
+<p>200 - Successful Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"messageId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"d545490f-46f7-4e31-aaa5-94d06fdf3f60"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"request"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"customerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0f42b842-007d-4c98-9160-ae6b6e908ca0"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"templateId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"users.membership.purchased"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"version"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{'membership': 'GOLD_MEMBER'}"</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"template"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+     </span><span class="s2">"templateId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"users.membership.purchased"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"templateGroupId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"memberships"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"language"</span><span class="p">:</span><span class="w"> </span><span class="s2">"es_AR"</span><span class="p">,</span><span class="w">
+     </span><span class="s2">"supportedMechanisms"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"EMAIL"</span><span class="p">,</span><span class="w"> </span><span class="s2">"PUSH"</span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"customer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"customerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0f42b842-007d-4c98-9160-ae6b6e908ca0"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"languagePreference"</span><span class="p">:</span><span class="w"> </span><span class="s2">"es_AR"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"mechanismPreference"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"PUSH"</span><span class="p">,</span><span class="s2">"PHONE"</span><span class="p">]</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"deliveries"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="s2">"mechanism"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EMAIL"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SENDGRID"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SKIPPED_BY_CUSTOMER_MECHANISM_PREFERENCE"</span><span class="w">
+  </span><span class="p">},{</span><span class="w">
+    </span><span class="s2">"mechanism"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PUSH"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FIREBASE"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WAITING_IN_QUEUE"</span><span class="w">
+  </span><span class="p">},{</span><span class="w">
+    </span><span class="s2">"mechanism"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PHONE"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"provider"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TWILIO"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SKIPPED_BY_CUSTOMER_LANGUAGE_PREFERENCE"</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<blockquote>
+<p>404 - Message Not Found Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="mi">404</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Message Not found"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre><h3 id='http-request-3'>HTTP Request</h3>
+<p><code>GET https://api.notihub.io/messages/</code></p>
+<h3 id='pagination'>Pagination</h3>
+<p>By default, an embedded list of the 25 last messages are returned. To page through the remaining list, you&#39;ll specify a combination of limit and page as query string parameters. Limit can have a max value of 200 customer objects. </p>
+<h3 id='example-http-request'>Example HTTP Request</h3>
+<p><code>GET https://api.notihub.io/messages/?limit=5&amp;page=3</code></p>
+<h3 id='searching-messages'>Searching Messages</h3>
+<p>You can search for Messages based on customer by appending the <code>customerId</code> or by template appending the <code>templateId</code> query string parameter to the endpoint. For example, if you would like to search for Messages sent by some customer you can append the additional parameter search to the request URL.</p>
+<h3 id='example-http-request-2'>Example HTTP Request</h3>
+<p><code>GET https://api.notihub.io/messages/?customerId=0f42b842-007d-4c98-9160-ae6b6e908ca0</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>limit</td>
+<td>Number</td>
+<td>No</td>
+<td>Total max number of elements to return. It can have a max value of 200</td>
+</tr>
+<tr>
+<td>page</td>
+<td>Number</td>
+<td>No</td>
+<td>Starting page to return in the query. Start on 0.</td>
+</tr>
+<tr>
+<td>customerId</td>
+<td>String</td>
+<td>No</td>
+<td>Filter the results that match the field <code>customerId</code> to get messages from a specific Customer</td>
+</tr>
+<tr>
+<td>templateId</td>
+<td>String</td>
+<td>No</td>
+<td>Filter the results that match the field <code>templateId</code> to get messages using a specific Template</td>
+</tr>
+</tbody></table>
+<h3 id='response-3'>Response</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>messageId</td>
+<td>String</td>
+<td>A UUID identifier for your message sent. You can use it to retrieve information about deliveries.</td>
+</tr>
+</tbody></table>
+<h1 id='errors'>Errors</h1>
+<p>The Notihub API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Error Code</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>400</td>
+<td>Bad Request -- Your request is invalid.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized -- Your API key is wrong.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found -- The specified kitten could not be found.</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
+</tr>
+<tr>
+<td>406</td>
+<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
+</tr>
+<tr>
+<td>410</td>
+<td>Gone -- The kitten requested has been removed from our servers.</td>
+</tr>
+<tr>
+<td>418</td>
+<td>I&#39;m a teapot.</td>
+</tr>
+<tr>
+<td>429</td>
+<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
+</tr>
+<tr>
+<td>503</td>
+<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="curl">curl</a>
+                <a href="#" data-language-name="java">java</a>
+                <a href="#" data-language-name="nodejs">nodejs</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
