@@ -201,7 +201,7 @@
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;curl&quot;,&quot;java&quot;,&quot;nodejs&quot;]">
+  <body class="index" data-languages="[&quot;curl&quot;,&quot;java&quot;,&quot;javascript&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -213,7 +213,7 @@
         <div class="lang-selector">
               <a href="#" data-language-name="curl">curl</a>
               <a href="#" data-language-name="java">java</a>
-              <a href="#" data-language-name="nodejs">nodejs</a>
+              <a href="#" data-language-name="javascript">javascript</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -371,7 +371,7 @@ With those keys you have to generate a Base64 encoded string <code>Base64(public
 <span class="c1">// Exchange the public credentials for an access token </span>
 <span class="n">NotihubAccessToken</span> <span class="n">accessToken</span> <span class="o">=</span> <span class="n">defaultNotihubClient</span><span class="o">.</span><span class="na">authenticationService</span><span class="o">()</span>
             <span class="o">.</span><span class="na">exchangeCredentials</span><span class="o">();</span>
-</code></pre><pre class="highlight javascript"><code><span class="kr">import</span> <span class="nx">Notihub</span> <span class="nx">from</span> <span class="s1">'@notihub/notihub-nodejs-sdk'</span><span class="p">;</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">import</span> <span class="nx">Notihub</span> <span class="nx">from</span> <span class="s1">'@notihub/notihub-nodejs-sdk'</span><span class="p">;</span>
 
 <span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span>
   <span class="na">publicKey</span><span class="p">:</span> <span class="s1">'&lt;your auth public key&gt;'</span><span class="p">,</span>
@@ -456,7 +456,7 @@ It can only have one externalId, we recommend to set the id that the customer ha
                 <span class="o">.</span><span class="na">verified</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="c1">// A check when false to avoid sending notifications to templates that require verification </span>
                 <span class="o">.</span><span class="na">build</span><span class="o">()))</span>
             <span class="o">.</span><span class="na">build</span><span class="o">());</span>
-</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
 
 <span class="nx">notihub</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span> 
         <span class="na">externalId</span><span class="p">:</span> <span class="s1">'your-id'</span><span class="p">,</span> <span class="c1">// Id from you system so you can easily access to it.</span>
@@ -642,7 +642,7 @@ If you don't set any external id, you will need to set an email or phone at leas
        <span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">GetCustomerRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
            <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="n">customerResponse</span><span class="o">.</span><span class="na">getCustomerId</span><span class="o">())</span>
            <span class="o">.</span><span class="na">build</span><span class="o">());</span>
-</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
 
 <span class="nx">notihub</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'customer-id'</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">customer</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
@@ -758,7 +758,7 @@ If you don't set any external id, you will need to set an email or phone at leas
             <span class="o">.</span><span class="na">language</span><span class="o">(</span><span class="s">"es_AR"</span><span class="o">)</span>
             <span class="o">.</span><span class="na">build</span><span class="o">());</span>
 
-</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
 
 <span class="nx">notihub</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span>
         <span class="na">customerId</span><span class="p">:</span> <span class="s1">'customer-id'</span><span class="p">,</span>
@@ -906,7 +906,7 @@ If you don't set any external id, and your customer doesn't has at least an emai
         <span class="o">.</span><span class="na">delete</span><span class="o">(</span><span class="n">DeleteCustomerRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
             <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="s">"customer-uuid"</span><span class="o">)</span> 
             <span class="o">.</span><span class="na">build</span><span class="o">());</span>
-</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
 
 <span class="nx">notihub</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="s1">'customer-id'</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">customer</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
@@ -959,7 +959,7 @@ If you don't set any external id, and your customer doesn't has at least an emai
                <span class="o">.</span><span class="na">limit</span><span class="o">(</span><span class="mi">50</span><span class="o">)</span>    
                <span class="o">.</span><span class="na">search</span><span class="o">(</span><span class="s">"some-email@email.com"</span><span class="o">)</span> 
                <span class="o">.</span><span class="na">build</span><span class="o">());</span>
-</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
 
 <span class="nx">notihub</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">list</span><span class="p">({</span> 
         <span class="na">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> 
@@ -1129,7 +1129,7 @@ If you don't set any external id, and your customer doesn't has at least an emai
             <span class="o">.</span><span class="na">primary</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="c1">// Only one Primary email can exist. It will be used to notify the customer</span>
             <span class="o">.</span><span class="na">verified</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="c1">// A check when false to avoid sending notifications to templates that require verification </span>
             <span class="o">.</span><span class="na">build</span><span class="o">());</span>
-</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
 
 <span class="nx">notihub</span><span class="p">.</span><span class="nx">customerContacts</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span> 
         <span class="na">customerId</span><span class="p">:</span> <span class="s1">'customer-id'</span><span class="p">,</span>
@@ -1262,7 +1262,7 @@ If you don't set any external id, and your customer doesn't has at least an emai
             <span class="o">.</span><span class="na">primary</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="c1">// Only one Primary email can exist. It will be used to notify the customer</span>
             <span class="o">.</span><span class="na">verified</span><span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="c1">// A check when false to avoid sending notifications to templates that require verification </span>
             <span class="o">.</span><span class="na">build</span><span class="o">());</span>
-</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
 
 <span class="nx">notihub</span><span class="p">.</span><span class="nx">customerContacts</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span> 
         <span class="na">contactId</span><span class="p">:</span> <span class="s1">'contact-id'</span><span class="p">,</span>
@@ -1421,7 +1421,7 @@ If you don't set any external id, and your customer doesn't has at least an emai
             <span class="o">.</span><span class="na">contactId</span><span class="o">(</span><span class="mi">3</span><span class="o">)</span>
             <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="s">"customer-id"</span><span class="o">)</span>
             <span class="o">.</span><span class="na">build</span><span class="o">());</span>
-</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
 
 <span class="nx">notihub</span><span class="p">.</span><span class="nx">customerContacts</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="s1">'contact-id'</span><span class="p">,</span> <span class="s1">'customer-id'</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">then</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
@@ -1505,7 +1505,7 @@ If you don't set any external id, and your customer doesn't has at least an emai
             <span class="o">.</span><span class="na">templateGroupId</span><span class="o">(</span><span class="s">"template-group-id"</span><span class="o">)</span>
             <span class="o">.</span><span class="na">mechanisms</span><span class="o">(</span><span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="n">DeliveryMechanismType</span><span class="o">.</span><span class="na">EMAIL</span><span class="o">,</span> <span class="n">DeliveryMechanismType</span><span class="o">.</span><span class="na">PUSH</span><span class="o">))</span>
             <span class="o">.</span><span class="na">build</span><span class="o">());</span>
-</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
 
 <span class="nx">notihub</span><span class="p">.</span><span class="nx">customerContacts</span><span class="p">.</span><span class="nx">createOrUpdate</span><span class="p">({</span> 
         <span class="na">customerId</span><span class="p">:</span> <span class="s1">'customer-id'</span><span class="p">,</span>
@@ -1603,7 +1603,7 @@ If you don't set any external id, and your customer doesn't has at least an emai
         <span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">GetCustomerPreferenceRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
             <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="s">"customer-id"</span><span class="o">)</span>
             <span class="o">.</span><span class="na">build</span><span class="o">());</span>
-</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
 
 <span class="nx">notihub</span><span class="p">.</span><span class="nx">customerContacts</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'customer-id'</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">customerPreference</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
@@ -1696,7 +1696,7 @@ If you don't set any external id, and your customer doesn't has at least an emai
             <span class="o">.</span><span class="na">customerId</span><span class="o">(</span><span class="s">"your-customer-id"</span><span class="o">)</span>
             <span class="o">.</span><span class="na">model</span><span class="o">(</span><span class="s">"{}"</span><span class="o">)</span> <span class="c1">// Can be null or any valid json. </span>
             <span class="o">.</span><span class="na">build</span><span class="o">());</span>
-</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
 
 <span class="nx">notihub</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span> 
         <span class="na">templateId</span><span class="p">:</span> <span class="s1">'your-template-id'</span><span class="p">,</span> 
@@ -1808,7 +1808,7 @@ If you don't set any external id, and your customer doesn't has at least an emai
         <span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">GetMessageRequest</span><span class="o">.</span><span class="na">builder</span><span class="o">()</span>
         <span class="o">.</span><span class="na">messageId</span><span class="o">(</span><span class="s">"your-message-id"</span><span class="o">)</span>
         <span class="o">.</span><span class="na">build</span><span class="o">());</span>
-</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
 
 <span class="nx">notihub</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'your-message-id'</span><span class="p">)</span>
     <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">message</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
@@ -1905,7 +1905,7 @@ If you don't set any external id, and your customer doesn't has at least an emai
             <span class="o">.</span><span class="na">limit</span><span class="o">(</span><span class="mi">10</span><span class="o">)</span>
             <span class="o">.</span><span class="na">page</span><span class="o">(</span><span class="mi">2</span><span class="o">)</span>
             <span class="o">.</span><span class="na">build</span><span class="o">());</span>
-</code></pre><pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">notihub</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Notihub</span><span class="p">({</span> <span class="p">...</span><span class="nx">yourKeys</span> <span class="p">});</span>
 
 <span class="nx">notihub</span><span class="p">.</span><span class="nx">messages</span><span class="p">.</span><span class="nx">list</span><span class="p">({</span> <span class="na">limit</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="na">page</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
     <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">messages</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="c1">// Successful response</span>
@@ -2076,7 +2076,7 @@ If you don't set any external id, and your customer doesn't has at least an emai
           <div class="lang-selector">
                 <a href="#" data-language-name="curl">curl</a>
                 <a href="#" data-language-name="java">java</a>
-                <a href="#" data-language-name="nodejs">nodejs</a>
+                <a href="#" data-language-name="javascript">javascript</a>
           </div>
       </div>
     </div>
