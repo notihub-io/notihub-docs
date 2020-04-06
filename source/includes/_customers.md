@@ -38,7 +38,7 @@ CreateCustomerResponse customerResponse = client.customerService()
             .build());
 ```
 
-```js
+```javascript
 const notihub = new Notihub({ ...yourKeys });
 
 notihub.customers.create({ 
@@ -158,7 +158,7 @@ GetCustomerResponse getCustomerResponse = client.customerService().authenticate(
            .build());
 ```
 
-```js
+```javascript
 const notihub = new Notihub({ ...yourKeys });
 
 notihub.customers.get('customer-id')
@@ -255,7 +255,7 @@ UpdateCustomerResponse updateCustomerResponse = client.customerService().authent
 
 ```
 
-```js
+```javascript
 const notihub = new Notihub({ ...yourKeys });
 
 notihub.customers.update({
@@ -368,7 +368,7 @@ client.customerService()
             .build());
 ```
 
-```js
+```javascript
 const notihub = new Notihub({ ...yourKeys });
 
 notihub.customers.delete('customer-id')
@@ -430,7 +430,7 @@ ListCustomerResponse[] customerResponse = client.customerService()
                .build());
 ```
 
-```js
+```javascript
 const notihub = new Notihub({ ...yourKeys });
 
 notihub.customers.list({ 

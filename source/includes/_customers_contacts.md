@@ -32,7 +32,7 @@ CreateCustomerContactResponse contactResponse = client.customerContactService()
             .build());
 ```
 
-```js
+```javascript
 const notihub = new Notihub({ ...yourKeys });
 
 notihub.customerContacts.create({ 
@@ -134,7 +134,7 @@ UpdateCustomerContactResponse contactResponse = client.customerContactService()
             .build());
 ```
 
-```js
+```javascript
 const notihub = new Notihub({ ...yourKeys });
 
 notihub.customerContacts.update({ 
@@ -249,7 +249,7 @@ client.customerContactService()
             .build());
 ```
 
-```js
+```javascript
 const notihub = new Notihub({ ...yourKeys });
 
 notihub.customerContacts.delete('contact-id', 'customer-id')

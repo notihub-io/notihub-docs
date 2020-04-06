@@ -34,7 +34,7 @@ SendMessageResponse messageResponse = client.messageService().authenticate(acces
             .build());
 ```
 
-```js
+```javascript
 const notihub = new Notihub({ ...yourKeys });
 
 notihub.messages.send({ 
@@ -127,7 +127,7 @@ GetMessageResponse messageResponse = client.messageService().authenticate(access
         .build());
 ```
 
-```js
+```javascript
 const notihub = new Notihub({ ...yourKeys });
 
 notihub.messages.get('your-message-id')
@@ -226,7 +226,7 @@ ListMessageResponse[] messageResponse = client.messageService().authenticate(acc
             .build());
 ```
 
-```js
+```javascript
 const notihub = new Notihub({ ...yourKeys });
 
 notihub.messages.list({ limit: 10, page: 1})

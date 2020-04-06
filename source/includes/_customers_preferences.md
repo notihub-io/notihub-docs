@@ -35,7 +35,7 @@ CreateCustomerPreferenceResponse createCustomerPreferenceResponse = client.custo
             .build());
 ```
 
-```js
+```javascript
 const notihub = new Notihub({ ...yourKeys });
 
 notihub.customerContacts.createOrUpdate({ 
@@ -116,7 +116,7 @@ GetCustomerPreferenceResponse getCustomerPreferenceResponse = client.customerSer
             .build());
 ```
 
-```js
+```javascript
 const notihub = new Notihub({ ...yourKeys });
 
 notihub.customerContacts.get('customer-id')

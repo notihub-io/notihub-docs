@@ -4,7 +4,7 @@ title: API Reference
 language_tabs: # must be one of https://git.io/vQNgJ
   - curl
   - java
-  - nodejs
+  - javascript
 
 toc_footers:
   - <a href='#'>Sign Up</a>

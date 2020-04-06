@@ -42,7 +42,7 @@ NotihubAccessToken accessToken = defaultNotihubClient.authenticationService()
             .exchangeCredentials();
 ```
 
-```js
+```javascript
 import Notihub from '@notihub/notihub-nodejs-sdk';
 
 const notihub = new Notihub({
