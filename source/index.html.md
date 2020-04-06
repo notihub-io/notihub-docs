@@ -7,7 +7,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - javascript
 
 toc_footers:
-  - <a href='#'>Sign Up</a>
+  - <a href='https://notihub.io/sign-up'>Sign Up</a>
   - <a href='https://notihub.io'>2020 © Notihub</a>
 
 includes:
