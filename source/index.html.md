@@ -31,8 +31,8 @@ We allow you to configure a different set of providers like Twilio, Sendgrid, AW
 
 * Create an account to obtain your environment and api keys 
 * Download any of our API SDK to fast access
-    * <a href="https://github.com/gvillo/notihub-java-sdk" target="_blank">Java SDK</a>
-    * <a href="https://github.com/gvillo/notihub-nodejs-sdk" target="_blank">Node.js SDK</a>
+    * <a href="https://github.com/notihub-io/notihub-java-sdk" target="_blank">Java SDK</a>
+    * <a href="https://github.com/notihub-io/notihub-nodejs-sdk" target="_blank">Node.js SDK</a>
 * Use those keys to start sending messages! 
 
 #Environments
