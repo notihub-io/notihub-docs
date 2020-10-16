@@ -121,6 +121,7 @@ body {
   aside {
     padding: 1em;
     border: 1px solid $print-color-light;
+    border-radius: 5px;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
     line-height: 1.6;
@@ -138,10 +139,15 @@ body {
 
   aside.warning:before {
     @extend %icon-exclamation-sign;
-    background-image: -webkit-linear-gradient(40deg, #e0c020 0%, #fad626 100%);
   }
 
   aside.success:before {
     @extend %icon-ok-sign;
+  }
+}
+
+.copy-clipboard {
+  @media print {
+    display: none
   }
 }
